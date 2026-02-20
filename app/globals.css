@@ -5,6 +5,7 @@
   --font-Outfit: "Outfit", "sans-serif";
   --font-Ovo: "Ovo", "serif";
   --font-Kaushan_Script: "Kaushan_Script", "cursive";
+  --font-Prata: "Prata", "serif";
 
   /* --- Grid Template Columns Customization --- */
   --grid-template-columns-auto: repeat(auto-fit, minmax(150px, 1fr));

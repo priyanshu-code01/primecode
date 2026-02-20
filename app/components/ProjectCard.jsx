@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { assets } from "@/assets/assets";
+import { motion } from "framer-motion";
 
 const ProjectCard = ({
   index,
@@ -16,8 +17,8 @@ const ProjectCard = ({
   return (
     <div className="relative w-full py-6 md:py-16">
       
-      {/* VERTICAL LINE */}
-      <div className="hidden md:block absolute inset-y-0 left-1/2 -translate-x-1/2 w-0.5 bg-white/50 rounded-full" />
+      {/* VERTICAL LINE  */}
+      <div className="hidden md:block absolute inset-y-0 left-1/2 -translate-x-1/2 w-0.5 bg-white/5 rounded-full" />
 
       {/* CARD WRAPPER */}
       <div
@@ -25,15 +26,37 @@ const ProjectCard = ({
         ${isReverse ? "md:flex-row-reverse" : ""}`} 
       >
         
-        {/* CENTER DOT */}
+        {/* CENTER DOT & CONNECTOR ANIMATION */}
         <div className="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-20 items-center justify-center">
+          
           <div className="absolute w-14 h-14 rounded-full opacity-20 animate-pulse" style={{ backgroundColor: textColor }} />
-          <span className="relative block w-3.5 h-3.5 rounded-full border border-black/50 shadow-[0_0_15px_rgba(0,0,0,0.5)] z-20" style={{ backgroundColor: textColor, boxShadow: `0 0 20px ${textColor}` }} />
-          <div className={`absolute h-0.5 z-0 ${isReverse ? "right-1/2 origin-right" : "left-1/2 origin-left"}`} style={{ width: "200px", background: `${textColor}` }} />
+          
+          <motion.span 
+            initial={{ scale: 0 }}
+            whileInView={{ scale: 1 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="relative block w-3.5 h-3.5 rounded-full border border-black/50 shadow-[0_0_15px_rgba(0,0,0,0.5)] z-20" 
+            style={{ backgroundColor: textColor, boxShadow: `0 0 20px ${textColor}` }} 
+          />
+          
+          {/* Connector Line Growing Animation */}
+          <motion.div 
+             initial={{ width: 0 }}
+             whileInView={{ width: "200px" }}
+             transition={{ duration: 0.8, delay: 0.3 }}
+             className={`absolute h-0.5 z-0 ${isReverse ? "right-1/2 origin-right" : "left-1/2 origin-left"}`} 
+             style={{ background: `${textColor}` }} 
+          />
         </div>
 
-        {/* TEXT SECTION */}
-        <div className="w-full md:w-[42%] px-4 md:px-6 text-center md:text-left z-10">
+        {/* TEXT SECTION ANIMATION */}
+        <motion.div 
+          initial={{ opacity: 0, x: isReverse ? 50 : -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          viewport={{ once: true }}
+          className="w-full md:w-[42%] px-4 md:px-6 text-center md:text-left z-10"
+        >
           
           <h2
             className="font-Ovo font-bold tracking-tight text-2xl sm:text-3xl md:text-4xl mb-2 sm:mb-3 transition-colors duration-300"
@@ -57,18 +80,28 @@ const ProjectCard = ({
 
           {/* Links */}
           <div className="flex justify-center md:justify-start gap-5">
-            <a href={projectLink} target="_blank" className="flex items-center gap-2 px-5 py-3 rounded-2xl text-white text-sm font-medium hover:opacity-80 transition-transform hover:-translate-y-1" style={{ backgroundColor: textColor }}>
+            <motion.a 
+               whileHover={{ scale: 1.05 }}
+               href={projectLink} target="_blank" className="flex items-center gap-2 px-5 py-3 rounded-2xl text-white text-sm font-medium hover:opacity-80 transition-transform" style={{ backgroundColor: textColor }}>
               Live Demo <Image src={assets.send_icon} alt="" className="w-3.5 invert" />
-            </a>
-            <a href={viewCode} target="_blank" className="flex items-center gap-2 px-5 py-3 rounded-2xl text-white text-sm font-medium hover:opacity-80 transition-transform hover:-translate-y-1" style={{ backgroundColor: textColor }}>
+            </motion.a>
+            <motion.a 
+               whileHover={{ scale: 1.05 }}
+               href={viewCode} target="_blank" className="flex items-center gap-2 px-5 py-3 rounded-2xl text-white text-sm font-medium hover:opacity-80 transition-transform" style={{ backgroundColor: textColor }}>
               Code <Image src={assets.code_icon_dark} alt="" className="w-3.5" />
-            </a>
+            </motion.a>
           </div>
-        </div>
+        </motion.div>
 
-        {/* IMAGE SECTION */}
-        <div className="w-full md:w-[42%] flex justify-center px-4 md:px-0">
-            <div className="relative group w-full max-w-[320px] sm:max-w-100"> {/* Mobile image size thoda aur tight */}
+        {/* IMAGE SECTION ANIMATION */}
+        <motion.div 
+            initial={{ opacity: 0, x: isReverse ? -50 : 50, scale: 0.9 }}
+            whileInView={{ opacity: 1, x: 0, scale: 1 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            viewport={{ once: true }}
+            className="w-full md:w-[42%] flex justify-center px-4 md:px-0"
+        >
+            <div className="relative group w-full max-w-[320px] sm:max-w-100"> 
                 
                 {/* Image Glow */}
                 <div 
@@ -83,11 +116,11 @@ const ProjectCard = ({
                         alt={title}
                         fill
                         priority={index === 0}
-                        className="object-cover opacity-80 transition duration-700 group-hover:opacity-100"
+                        className="object-cover opacity-80 transition duration-700 group-hover:opacity-100 group-hover:scale-105"
                     />
                 </div>
             </div>
-        </div>
+        </motion.div>
 
       </div>
     </div>

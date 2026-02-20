@@ -1,10 +1,15 @@
 import { workData } from '@/assets/pojects'
 import ProjectCard from './ProjectCard'
+import { motion } from 'framer-motion'
 
 const Projects = () => {
 
     return (
-        <div
+        <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
             id='project'
             className='w-full px-[4%] lg:px-[12%] py-10 scroll-mt-20 overflow-hidden bg-[#030712] relative'
         >
@@ -16,23 +21,32 @@ const Projects = () => {
 
             {/* --- Main Content */}
             <div className="relative z-10">
-                <h4
+                <motion.h4
+                    initial={{ y: 20, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ delay: 0.3, duration: 0.5 }}
                     className='text-center text-amber-500 text-lg font-Ovo mb-2 tracking-widest uppercase'
                 >
                     My Portfolio
-                </h4>
+                </motion.h4>
                 
-                <h2
+                <motion.h2
+                    initial={{ y: 20, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ delay: 0.5, duration: 0.5 }}
                     className='text-center text-5xl font-Ovo font-bold text-white'
                 >
                     My Latest Work
-                </h2>
+                </motion.h2>
 
-                <p
+                <motion.p
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ delay: 0.7, duration: 0.5 }}
                     className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo text-gray-400 leading-relaxed'
                 >
                     Explore a collection of projects showcasing my expertise in front-end development using React, Tailwind, and Modern UI principles.
-                </p>
+                </motion.p>
 
                 {/* Projects Container */}
                 <div className='w-full'>
@@ -51,7 +65,7 @@ const Projects = () => {
                     ))}
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 
