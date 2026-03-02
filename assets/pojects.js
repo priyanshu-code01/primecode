@@ -1,12 +1,13 @@
 export const workData = [
   {
-    title: "Modern E-Commerce Platform",
-    description: "A full-featured shopping experience with search and filter.",
+    title: "PrimePick – E-Commerce Web Application",
+    description:
+      "A modern React-based e-commerce application featuring product listing, search, category collections, cart management, and order placement. Implemented global state management using Context API for cart and shop data, with reusable components and responsive UI for a smooth shopping experience.",
     bgImage: "/work-1.png",
     tags: ["React", "Tailwind CSS", "useContext", "react-router"],
-    projectLink: "https://reatacart.vercel.app/",
-    viewCode: "https://github.com/priyanshu-code01/reatacart",
-    textColor: "#8E8F86",
+    projectLink: "https://prime-pick-dun.vercel.app/",
+    viewCode: "https://github.com/priyanshu-code01/PrimePick",
+    textColor: "#64C2DB",
   },
   {
     title: "SaaS Dashboard UI",
