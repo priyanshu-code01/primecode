@@ -10,14 +10,14 @@ export const workData = [
     textColor: "#64C2DB",
   },
   {
-    title: "SaaS Dashboard UI",
+    title: "Calculator App",
     description:
-      "Advanced data visualization with interactive charts and dark mode.",
+      "An interactive calculator application developed using HTML, CSS, and vanilla JavaScript.",
     bgImage: "/work-2.png",
-    tags: ["Next.js", "Recharts", "Tailwind", "TypeScript"],
-    projectLink: "https://your-demo-link.com",
-    viewCode: "https://github.com/your-username/repo-name",
-    textColor: "#667A28",
+    tags: ["HTML5", "CSS", "JavaScript"],
+    projectLink: "https://calculator-snowy-nine-85.vercel.app/",
+    viewCode: "https://github.com/priyanshu-code01/Calculator",
+    textColor: "#00EAFF",
   },
   {
     title: "AI Image Generator",
