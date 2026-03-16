@@ -1,9 +1,19 @@
 export const workData = [
   {
+  title: "GitHub Profile Explorer",
+  description:
+    "A modern GitHub profile explorer built with React and Tailwind CSS that allows users to search GitHub usernames and view profile details, repositories, followers, and account information in a clean UI using the GitHub REST API.",
+  bgImage: "/work-1.png",
+  tags: ["React", "Tailwind CSS", "GitHub REST API", "Vite"],
+  projectLink: "https://gitprofile-dev.vercel.app/",
+  viewCode: "https://github.com/priyanshu-code01/gitprofile.dev",
+  textColor: "#1F2937",
+  },
+  {
     title: "PrimePick – E-Commerce Web Application",
     description:
       "A modern React-based e-commerce application featuring product listing, search, category collections, cart management, and order placement. Implemented global state management using Context API for cart and shop data, with reusable components and responsive UI for a smooth shopping experience.",
-    bgImage: "/work-1.png",
+    bgImage: "/work-2.png",
     tags: ["React", "Tailwind CSS", "useContext", "react-router"],
     projectLink: "https://prime-pick-dun.vercel.app/",
     viewCode: "https://github.com/priyanshu-code01/PrimePick",
@@ -13,21 +23,11 @@ export const workData = [
     title: "Calculator App",
     description:
       "An interactive calculator application developed using HTML, CSS, and vanilla JavaScript.",
-    bgImage: "/work-2.png",
+    bgImage: "/work-3.png",
     tags: ["HTML5", "CSS", "JavaScript"],
     projectLink: "https://calculator-snowy-nine-85.vercel.app/",
     viewCode: "https://github.com/priyanshu-code01/Calculator",
     textColor: "#00EAFF",
-  },
-  {
-    title: "AI Image Generator",
-    description:
-      "A creative tool using OpenAI API to generate images from text.",
-    bgImage: "/work-3.png",
-    tags: ["React", "OpenAI API", "Node.js", "Cloudinary"],
-    projectLink: "https://your-demo-link.com",
-    viewCode: "https://github.com/your-username/repo-name",
-    textColor: "#3E2F3C",
   },
   {
     title: "Real-time Chat App",
