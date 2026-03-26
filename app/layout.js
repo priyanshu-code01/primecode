@@ -18,7 +18,7 @@ const prata = Prata({
 });
 
 export const metadata = {
-  title: "Priyanshu Singh | Frontend Developer & React Specialist",
+  title: "Priyanshu Singh | Frontend Developer | React Developer",
   description: "Professional Frontend Developer specializing in React.js, and Tailwind CSS. Building high-performance, responsive web applications with a focus on clean code and user experience.",
 };
 
@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${outfit.className} ${ovo.className} ${kaushan_script.className} ${prata.className} antialiased leading-8 overflow-x-hidden dark:bg-dark-theme dark:text-white`}
+        className={`${outfit.className} ${ovo.className} ${kaushan_script.className} ${prata.className} antialiased leading-8 overflow-x-hidden bg-[#030712]`}
       >
         {children}
       </body>
