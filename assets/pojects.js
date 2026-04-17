@@ -20,23 +20,23 @@ export const workData = [
     textColor: "#64C2DB",
   },
   {
-    title: "Calculator App",
-    description:
-      "An interactive calculator application developed using HTML, CSS, and vanilla JavaScript.",
-    bgImage: "/work-3.png",
-    tags: ["HTML5", "CSS", "JavaScript"],
-    projectLink: "https://calculator-snowy-nine-85.vercel.app/",
-    viewCode: "https://github.com/priyanshu-code01/Calculator",
-    textColor: "#00EAFF",
-  },
-  {
     title: "Advance Task Manager",
     description:
       "I built a clean and responsive Task Manager Web App using React.js, where users can easily manage their daily tasks with real-time statistics and smooth interactions.",
-    bgImage: "/work-4.png",
+    bgImage: "/work-3.png",
     tags: ["React", "Context API", "Local Storage", "Tailwind"],
     projectLink: "https://advancetaskmanager.vercel.app/",
     viewCode: "https://github.com/priyanshu-code01/Task-Manager",
     textColor: "#7BF0A7",
+  },
+  {
+    title: "Calculator App",
+    description:
+      "An interactive calculator application developed using HTML, CSS, and vanilla JavaScript.",
+    bgImage: "/work-4.png",
+    tags: ["HTML5", "CSS", "JavaScript"],
+    projectLink: "https://calculator-snowy-nine-85.vercel.app/",
+    viewCode: "https://github.com/priyanshu-code01/Calculator",
+    textColor: "#00EAFF",
   },
 ];
