@@ -1,13 +1,13 @@
 export const workData = [
   {
-  title: "GitHub Profile Explorer",
-  description:
-    "A modern GitHub profile explorer built with React and Tailwind CSS that allows users to search GitHub usernames and view profile details, repositories, followers, and account information in a clean UI using the GitHub REST API.",
-  bgImage: "/work-1.png",
-  tags: ["React", "Tailwind CSS", "GitHub REST API", "Vite"],
-  projectLink: "https://gitprofile-dev.vercel.app/",
-  viewCode: "https://github.com/priyanshu-code01/gitprofile.dev",
-  textColor: "#1F2937",
+    title: "GitHub Profile Explorer",
+    description:
+      "A modern GitHub profile explorer built with React and Tailwind CSS that allows users to search GitHub usernames and view profile details, repositories, followers, and account information in a clean UI using the GitHub REST API.",
+    bgImage: "/work-1.png",
+    tags: ["React", "Tailwind CSS", "GitHub REST API", "Vite"],
+    projectLink: "https://gitprofile-dev.vercel.app/",
+    viewCode: "https://github.com/priyanshu-code01/gitprofile.dev",
+    textColor: "#1F2937",
   },
   {
     title: "PrimePick – E-Commerce Web Application",
@@ -30,13 +30,13 @@ export const workData = [
     textColor: "#00EAFF",
   },
   {
-    title: "Real-time Chat App",
+    title: "Advance Task Manager",
     description:
-      "Instant messaging app with Firebase backend and real-time updates.",
+      "I built a clean and responsive Task Manager Web App using React.js, where users can easily manage their daily tasks with real-time statistics and smooth interactions.",
     bgImage: "/work-4.png",
-    tags: ["React", "Firebase", "Framer Motion", "Tailwind"],
-    projectLink: "https://your-demo-link.com",
-    viewCode: "https://github.com/your-username/repo-name",
-    textColor: "#628FA6",
+    tags: ["React", "Context API", "Local Storage", "Tailwind"],
+    projectLink: "https://advancetaskmanager.vercel.app/",
+    viewCode: "https://github.com/priyanshu-code01/Task-Manager",
+    textColor: "#7BF0A7",
   },
 ];
